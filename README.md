@@ -16,6 +16,9 @@ A full-stack MERN Job Portal that helps users discover job opportunities, view j
 - Modern and Responsive UI
 - Logout Functionality
 
+## Live Demo
+ https://jobconnect-aouy.onrender.com
+
 ## 🛠️ Technologies Used
 
 ### Frontend
