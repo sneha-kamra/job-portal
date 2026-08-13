@@ -23,7 +23,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5001/api/jobs")
+      .get("https://job-portal-z64j.onrender.com/api/jobs")
       .then((response) => {
         setJobs(response.data);
         setLoading(false);

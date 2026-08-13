@@ -29,8 +29,7 @@ function ApplyJob() {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:5001/api/applications", {
-        jobId: id,
+      await axios.post("https://job-portal-z64j.onrender.com/api/applications", {
         ...formData,
       });
 
