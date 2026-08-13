@@ -110,8 +110,13 @@ app.post("/api/applications", async (req, res) => {
 
 // ==================== MONGODB CONNECTION ====================
 
+const mongoUri = process.env.MONGODB_URI
+  ?.replace(/^MONGODB_URI\s*=\s*/i, "")
+  .replace(/^["']|["']$/g, "")
+  .trim();
+
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(mongoUri)
   .then(() => {
     console.log("MongoDB connected successfully");
 
